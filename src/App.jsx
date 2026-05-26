@@ -103,12 +103,19 @@ function App() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap items-center gap-3 pt-2">
+                {/* Download CV Button */}
                 <a
-                  href="#contact"
-                  className="bg-yellow-600 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-xl transition-all duration-200 flex items-center gap-2 shadow-lg shadow-yellow-900/20"
+                  href="https://drive.google.com/file/d/1gI9bSqmRHN6dRSB38rajJtBa6pcPAeQk/view?usp=sharing" // ← Ganti dengan FILE_ID kamu
+                  download="Christ-Daniel-Santoso-CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Download CV"
+                  className="bg-yellow-600 hover:bg-yellow-500 active:scale-95 text-black font-semibold px-6 py-3 rounded-xl transition-all duration-200 flex items-center gap-2 shadow-lg shadow-yellow-900/20"
                 >
                   Download CV <i className="ri-file-download-line"></i>
                 </a>
+
+                {/* View Projects Button */}
                 <a
                   href="#projects"
                   className={`font-semibold px-6 py-3 rounded-xl transition-all duration-200 flex items-center gap-2 border ${
